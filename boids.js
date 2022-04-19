@@ -3,7 +3,7 @@ let width = 150;
 let height = 150;
 
 const numBoids = 100;
-const visualRange = 75;
+const visualRange = 40;
 
 var boids = [];
 
