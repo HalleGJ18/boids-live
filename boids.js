@@ -140,7 +140,7 @@ function matchVelocity(boid) {
 // Speed will naturally vary in flocking behavior, but real animals can't go
 // arbitrarily fast.
 function limitSpeed(boid) {
-  const speedLimit = 5;
+  const speedLimit = 10;
 
   const speed = Math.sqrt(boid.dx * boid.dx + boid.dy * boid.dy);
   if (speed > speedLimit) {
