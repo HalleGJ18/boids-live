@@ -69,7 +69,7 @@ function keepWithinBounds(boid) {
 // Find the center of mass of the other boids and adjust velocity slightly to
 // point towards the center of mass.
 function flyTowardsCenter(boid) {
-  const centeringFactor = 0.005; // adjust velocity by this %
+  const centeringFactor = 0.003; // adjust velocity by this %
 
   let centerX = 0;
   let centerY = 0;
@@ -95,7 +95,7 @@ function flyTowardsCenter(boid) {
 // Move away from other boids that are too close to avoid colliding
 function avoidOthers(boid) {
   const minDistance = 20; // The distance to stay away from other boids
-  const avoidFactor = 0.05; // Adjust velocity by this %
+  const avoidFactor = 0.03; // Adjust velocity by this %
   let moveX = 0;
   let moveY = 0;
   for (let otherBoid of boids) {
@@ -114,7 +114,7 @@ function avoidOthers(boid) {
 // Find the average velocity (speed and direction) of the other boids and
 // adjust velocity slightly to match.
 function matchVelocity(boid) {
-  const matchingFactor = 0.05; // Adjust by this % of average velocity
+  const matchingFactor = 0.03; // Adjust by this % of average velocity
 
   let avgDX = 0;
   let avgDY = 0;
